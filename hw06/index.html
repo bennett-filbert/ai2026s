@@ -141,10 +141,6 @@
     <div class="col twenty"><a href="../hw04/index.html">04</a></div>
     <div class="col twenty"><a href="../hw05/index.html">05</a></div>
     <div class="col twenty"><a href="../hw06/index.html">06</a></div>
-    <div class="col twenty"><a href="../hw06/index.html">07</a></div>
-    <div class="col twenty"><a href="../hw06/index.html">08</a></div>
-    <div class="col twenty"><a href="../hw06/index.html">09</a></div>
-    <div class="col twenty"><a href="../hw06/index.html">10</a></div>
   </div>
 
   <!-- ------------------------------------------------>
@@ -157,7 +153,9 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+    This assignment gave me my first hands-on experience with AI text-to-video generation. I used ComfyUI together with open-source models from Civitai to create video content through a node-based workflow. The process was very interesting because I had to connect different nodes, adjust settings, and experiment with prompts to achieve better results.
+    Through this project, I learned that prompt design and model selection have a significant impact on the final video quality. I also encountered some challenges, such as maintaining consistency between frames, but solving these issues helped me better understand how generative AI works. Overall, this assignment was both educational and enjoyable. It improved my technical skills, creativity, and understanding of modern AI video generation tools.
+    </div>
     </div>
   </div>
 
@@ -173,22 +171,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - Comfy UI 環境設定完成</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 生成角色的圖片</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 生成完整角色動畫</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -199,13 +197,102 @@
 
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+    <div class="col-md-12 twenty" style="background-color:#00AC48;">
+      <figcaption>Comfy UI 環境設定完成</figcaption>
+      <a href="https://civitai.com/models/61643?modelVersionId=67841">CheckPoint: based66_v30</a><br>
+      <a href="https://civitai.com/models/69977/chibi-laugh">LoRA:  chibi-laugh</a><br>  
+      <img src="Screenshot.png"  width="100%"><br>
+    </div>
+  </div>
+  
+  <div class="row hw12 bottomrow">
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 1</figcaption>
+      <img src="GIF_00001.png"  width="100%"><br>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 2</figcaption>
+      <img src="GIF_00002.png"  width="100%"><br>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 3</figcaption>
+      <img src="GIF_00003.png"  width="100%"><br>
     </div>
   </div>
 
+  
+  <div class="row hw12 bottomrow">
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 1</figcaption>
+      <img src="GIF_00001.gif" width="100%"><br>
+      <td> 使用提示詞:
+     "0":"1girl, brown hair, long braid, light blue linen dress, modest, flower meadow, early morning, soft sunrise, dew on grass, walking slowly",
+"10":"1girl, brown hair, long braid, light blue linen dress, modest, flower meadow, early morning, soft sunrise, dew on grass, walking slowly",
+"20":"1girl, brown hair, long braid, light blue linen dress, modest, flower meadow, early morning, soft sunrise, dew on grass, walking slowly",
+
+"30":"1girl, brown hair, long braid, light blue linen dress, modest, flower meadow, bright morning, clear sky, colorful flowers, gentle breeze",
+"40":"1girl, brown hair, long braid, light blue linen dress, modest, flower meadow, bright morning, clear sky, colorful flowers, gentle breeze",
+"50":"1girl, brown hair, long braid, light blue linen dress, modest, flower meadow, bright morning, clear sky, colorful flowers, gentle breeze",
+
+"60":"1girl, brown hair, long braid, light blue linen dress, modest, flower meadow, golden hour, warm sunlight, glowing flowers, cinematic lighting",
+"70":"1girl, brown hair, long braid, light blue linen dress, modest, flower meadow, golden hour, warm sunlight, glowing flowers, cinematic lighting",
+"80":"1girl, brown hair, long braid, light blue linen dress, modest, flower meadow, golden hour, warm sunlight, glowing flowers, cinematic lighting",
+
+"90":"1girl, brown hair, long braid, light blue linen dress, modest, flower meadow, night, starry sky, moonlight, fireflies, peaceful atmosphere",
+"100":"1girl, brown hair, long braid, light blue linen dress, modest, flower meadow, night, starry sky, moonlight, fireflies, peaceful atmosphere",
+"110":"1girl, brown hair, long braid, light blue linen dress, modest, flower meadow, night, starry sky, moonlight, fireflies, peaceful atmosphere"
+      </td>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 2</figcaption>
+      <img src="GIF_00002.gif" width="100%"><br>
+      <td> 使用提示詞:
+     "0":"fashion model, blooming spring park, elegant floral dress, pearl hairpin, gentle morning breeze, fresh flowers, soft sunlight",
+"10":"fashion model, blooming spring park, elegant floral dress, pearl hairpin, gentle morning breeze, fresh flowers, soft sunlight",
+"20":"fashion model, blooming spring park, elegant floral dress, pearl hairpin, gentle morning breeze, fresh flowers, soft sunlight",
+
+"30":"fashion model, tropical seaside, lightweight summer dress, straw hat, bright sunshine, turquoise ocean, warm sea breeze",
+"40":"fashion model, tropical seaside, lightweight summer dress, straw hat, bright sunshine, turquoise ocean, warm sea breeze",
+"50":"fashion model, tropical seaside, lightweight summer dress, straw hat, bright sunshine, turquoise ocean, warm sea breeze",
+
+"60":"fashion model, autumn boulevard, cozy cardigan, pleated midi skirt, golden leaves, afternoon sunlight, peaceful atmosphere",
+"70":"fashion model, autumn boulevard, cozy cardigan, pleated midi skirt, golden leaves, afternoon sunlight, peaceful atmosphere",
+"80":"fashion model, autumn boulevard, cozy cardigan, pleated midi skirt, golden leaves, afternoon sunlight, peaceful atmosphere",
+
+"90":"fashion model, snowy downtown street, long wool coat, knitted scarf, winter beret, soft snowfall, evening city lights",
+"100":"fashion model, snowy downtown street, long wool coat, knitted scarf, winter beret, soft snowfall, evening city lights",
+"110":"fashion model, snowy downtown street, long wool coat, knitted scarf, winter beret, soft snowfall, evening city lights"
+
+          <br><br>
+          使用負面提示詞:
+          (bad quality, worst quality:1.2), lowres, blurry, distorted anatomy, extra limbs, deformed hands, poorly drawn face, cropped, watermark, text, logo, sheer, transparent, translucent, revealing, nsfw
+      </td>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 3</figcaption>
+      <img src="GIF_00003.gif" width="100%"><br>
+      <td> 使用提示詞:
+      "0":"confident woman, spring garden, elegant long-sleeve floral dress, ribbon hair clip, gentle breeze, blooming flowers, warm smile, natural sunlight",
+      "10":"confident woman, spring garden, elegant long-sleeve floral dress, ribbon hair clip, gentle breeze, blooming flowers, warm smile, natural sunlight",
+      "20":"confident woman, spring garden, elegant long-sleeve floral dress, ribbon hair clip, gentle breeze, blooming flowers, warm smile, natural sunlight",
+
+      "30":"confident woman, summer beach, modest cotton sundress, wide-brim straw hat, ocean breeze, bright sunshine, relaxed smile, clear blue sky",
+      "40":"confident woman, summer beach, modest cotton sundress, wide-brim straw hat, ocean breeze, bright sunshine, relaxed smile, clear blue sky",
+      "50":"confident woman, summer beach, modest cotton sundress, wide-brim straw hat, ocean breeze, bright sunshine, relaxed smile, clear blue sky",
+      
+      "60":"confident woman, autumn park, cozy knit sweater, long pleated skirt, golden leaves falling, soft afternoon light, friendly smile, peaceful atmosphere",
+      "70":"confident woman, autumn park, cozy knit sweater, long pleated skirt, golden leaves falling, soft afternoon light, friendly smile, peaceful atmosphere",
+      "80":"confident woman, autumn park, cozy knit sweater, long pleated skirt, golden leaves falling, soft afternoon light, friendly smile, peaceful atmosphere",
+      
+      "90":"confident woman, winter city street, stylish wool coat, knitted scarf, beret, light snowfall, elegant pose, evening lights, calm expression",
+      "100":"confident woman, winter city street, stylish wool coat, knitted scarf, beret, light snowfall, elegant pose, evening lights, calm expression",
+      "110":"confident woman, winter city street, stylish wool coat, knitted scarf, beret, light snowfall, elegant pose, evening lights, calm expression"
+        使用負面提示詞:
+        (bad quality, worst quality:1.2), lowres, blurry, jpeg artifacts, deformed anatomy, extra fingers, extra limbs, bad hands, cropped, watermark, text, logo, sheer, transparent, translucent, revealing, cleavage, nsfw
+      </td>
+    </div>
+  </div>
+  <!-- ------------------------------------------------>
   <!-- ------------------------------------------------>
 
   <!-- ------------------------------------------------>
